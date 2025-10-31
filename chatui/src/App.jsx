@@ -9,8 +9,8 @@ function App() {
     const ws = useRef(null);
 
     useEffect(() => {
-        //ws.current = new WebSocket("ws://localhost:5140/ws");
-        ws.current = new WebSocket("wss://chatserver-erdjcvf7fbevb3be.swedencentral-01.azurewebsites.net/ws");
+        ws.current = new WebSocket("ws://localhost:5140/ws");
+        //ws.current = new WebSocket("wss://chatserver-xx.azurewebsites.net/ws"); //Removed this resource from azure but keeping for further reference
 
         ws.current.onopen = () => {
             console.log("Connected to server");
